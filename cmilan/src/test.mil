@@ -1,0 +1,30 @@
+BEGIN
+        i := 10;
+        k := 0;
+        WHILE k != i DO
+                WRITE(k);
+                k := k + 1
+        OD;
+        WRITE(i)
+END
+        
+
+
+0:	PUSH	10
+1:	STORE	0
+2:	PUSH	0
+3:	STORE	1
+4:	LOAD	1
+5:	LOAD	0
+6:	COMPARE	1
+7:	JUMP_NO	15
+8:	LOAD	1
+9:	PRINT
+10:	LOAD	1
+11:	PUSH	1
+12:	ADD
+13:	STORE	1
+14:	JUMP	4
+15:	LOAD	0
+16:	PRINT
+17:	STOP
